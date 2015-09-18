@@ -1,10 +1,11 @@
 <html>
 	<head>
 		<title>Страница</title>
+    <meta charset="utf-8">
     <script language = "JavaScript" src=script.js></script>
 	</head>
 	<body>
-		<form name="test" method="post" submit="Validate()">
+		<form name="test" method="post" action="page1.php" id="submit">
   		login:<br>
    		<input type="text" size="40" name="login" id="login"><br>
       e-mail:<br>
@@ -13,7 +14,7 @@
       <input type="password" size="40" name="pass1" id="pass1"><br>
       password repeat:<br>
       <input type="password" size="40" name="pass2" id="pass2"><br>	
-  		<input type="button" value="Отправить">
+  		<input type="button" onclick="validate();" value="Отправить">
    		<input type="reset" value="Очистить">
     </form>
 	</body>

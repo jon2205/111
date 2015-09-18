@@ -1,23 +1,24 @@
-function Validate() 
+function validate() 
 {
-	if (document.getElenetById('login').value == "") 
+	if (document.getElementById('login').value == "") 
 	{
 		alert("Введите логин");
-		document.getElenetById('login').focus();
+		document.getElementById('login').focus();
 		return false;
 	}
-	if (document.getElenetById('mail').value == "")
+	if (document.getElementById('mail').value == "")
 	{
 		alert("Введите правильный е-маил");
-		document.getElenetById('mail').focus();
+		document.getElementById('mail').focus();
 		return false;
 	}
-	if (document.getElenetById('pass1').value != document.getElenetById('pass2').value) 
+	if (document.getElementById('pass1').value != document.getElementById('pass2').value) 
 	{
 		alert("Введите одинаковые пароли");
-		document.getElenetById('pass1').focus();
+		document.getElementById('pass1').focus();
 		return false;
 	}
 	alert("Всё введено верно");
+	document.getElementById('submit').submit();
 	return true;
 }	
