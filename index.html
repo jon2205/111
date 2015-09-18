@@ -4,16 +4,16 @@
     <script language = "JavaScript" src=script.js></script>
 	</head>
 	<body>
-		<form name="test" method="post" onsubmit="Validate(this)">
+		<form name="test" method="post" submit="Validate()">
   		login:<br>
-   		<input type="text" size="40" name="login"><br>
+   		<input type="text" size="40" name="login" id="login"><br>
       e-mail:<br>
-      <input type="text" size="40" name="mail"><br>
+      <input type="text" size="40" name="mail" id="mail"><br>
       password:<br>
-      <input type="password" size="40" name="pass1"><br>
+      <input type="password" size="40" name="pass1" id="pass1"><br>
       password repeat:<br>
-      <input type="password" size="40" name="pass2"><br>	
-  		<input type="submit" value="Отправить">
+      <input type="password" size="40" name="pass2" id="pass2"><br>	
+  		<input type="button" value="Отправить">
    		<input type="reset" value="Очистить">
     </form>
 	</body>
